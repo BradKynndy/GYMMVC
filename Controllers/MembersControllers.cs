@@ -35,7 +35,7 @@ namespace GYMMVC.Controllers
                     {
                         HttpClient httpClient = new HttpClient();
                         string token = HttpContext.Session.GetString("SessionTokenMembers");
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token)
+                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                         HttpResponseMessage response = await httpClient.DeleteAsync(uriBase + id.ToString);                        
                         string serialized = await response.Content.ReadAsStringAsync();
@@ -169,6 +169,7 @@ namespace GYMMVC.Controllers
                         var content = new StringContent(JsonConvert.SerializeObject(p));
                         content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                         HttpResponseMessage response = await httpClient.PostAsync(uriBase, content);
+                        string serialized = await response.Content.ReadAsStringAsync();
 
                         if (response.StatusCode == System.Net.HttpStatusCode.OK)
                         {
@@ -184,9 +185,6 @@ namespace GYMMVC.Controllers
                         return RedirectToAction("Create");
                     }
                 }
-
-
-
 
                 [HttpGet]
                 public async Task<ActionResult> IndexAsync()
@@ -228,7 +226,7 @@ namespace GYMMVC.Controllers
                 public async Task<ActionResult> AutentificarAsync(MembersViewModel u)
                 {
                     try
-                    { //CODIGO AQUI
+                    { 
                         HttpClient httpClient = new HttpClient();
                         string uriComplementar = "Autenticar";
 
@@ -276,10 +274,7 @@ namespace GYMMVC.Controllers
                 else
                 {
                     throw new System.Exception(serialized);
-                }
-
-                
-                
+                } 
             }//codigo acima
             catch(System.Exception ex)
             {

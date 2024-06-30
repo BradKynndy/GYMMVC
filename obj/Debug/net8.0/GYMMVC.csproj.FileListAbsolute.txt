@@ -34,3 +34,4 @@ C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\refint\GYMMVC.
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.pdb
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.genruntimeconfig.cache
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\ref\GYMMVC.dll
+C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.sourcelink.json

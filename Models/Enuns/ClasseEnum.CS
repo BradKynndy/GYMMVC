@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GYMMVC.Models;
-using GYMMVC.Models.Enuns
+using GYMMVC.Models.Enuns;
 
 namespace GYMMVC.Models.Enuns
 {
