@@ -1,0 +1,20 @@
+@model GYMMVC.Models.MembersViewModel
+
+@{
+    ViewBang.Title = "Detalhes do Membro"
+}
+<h2>Detalhes doo Membro</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dt>@Html.DisplayFor(mnodel => model.Id)</dt>
+
+        <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
+        <dt>@Html.DisplayFor(mnodel => model.Nome)</dt>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model. Id}) |
+    @Html.ActionLink("Retornar", "Index")
+</p>
