@@ -1,10 +1,9 @@
 @model GYMMVC.Models.MembersViewModel
-
 @{
-    ViewBang.Title = "Novo Membro";
+    ViewBag.Title = "Novo Membro";
 }
 <h2>Criar um novo Membro</h2>
-@using (Html.BeginFrom())
+@using(Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     <div class="form-horizontal">

@@ -1,17 +1,23 @@
 @model GYMMVC.Models.MembersViewModel
 
 @{
-    ViewBang.Title = "Detalhes do Membro"
+    ViewBag.Title = "Detalhes do Membro";
 }
 <h2>Detalhes doo Membro</h2>
 <div>
     <hr />
     <dl class="dl-horizontal">
         <dt>@Html.DisplayNameFor(model => model.Id)</dt>
-        <dt>@Html.DisplayFor(mnodel => model.Id)</dt>
+        <dt>@Html.DisplayFor(mnodel => Model.Id)</dt>
 
         <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
-        <dt>@Html.DisplayFor(mnodel => model.Nome)</dt>
+        <dt>@Html.DisplayFor(mnodel => Model.Nome)</dt>
+        
+                <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+        <dt>@Html.DisplayFor(mnodel => Model.Email)</dt>
+
+                <dt>@Html.DisplayNameFor(model => model.Nivelconta)</dt>
+        <dt>@Html.DisplayFor(mnodel => Model.Nivelconta)</dt>
     </dl>
 </div>
 <p>

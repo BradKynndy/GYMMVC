@@ -242,24 +242,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bkynn\\.nuget\\packages\\": {}
+    "C:\\Users\\eduar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bkynn\\OneDrive\\Área de Trabalho\\GYMMVC\\GYMMVC.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\Projetos\\GYMMVC\\GYMMVC.csproj",
       "projectName": "GYMMVC",
-      "projectPath": "C:\\Users\\bkynn\\OneDrive\\Área de Trabalho\\GYMMVC\\GYMMVC.csproj",
-      "packagesPath": "C:\\Users\\bkynn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bkynn\\OneDrive\\Área de Trabalho\\GYMMVC\\obj\\",
+      "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Projetos\\GYMMVC\\GYMMVC.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Projetos\\GYMMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bkynn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -307,7 +315,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

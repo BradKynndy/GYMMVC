@@ -35,3 +35,15 @@ C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.pdb
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.genruntimeconfig.cache
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\ref\GYMMVC.dll
 C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\obj\Debug\net8.0\GYMMVC.sourcelink.json
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.csproj.AssemblyReference.cache
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.AssemblyInfoInputs.cache
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.AssemblyInfo.cs
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.csproj.CoreCompileInputs.cache
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.RazorAssemblyInfo.cache
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.RazorAssemblyInfo.cs
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.sourcelink.json
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.dll
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\refint\GYMMVC.dll
+C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\obj\Debug\net8.0\GYMMVC.pdb

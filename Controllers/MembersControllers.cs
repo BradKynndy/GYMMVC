@@ -14,179 +14,9 @@ namespace GYMMVC.Controllers
 {
     public class MembersController : Controller
     {
-        public string uriBase ="ftp://gym.somee.com/www.Gym.somee.com";
+        public string uriBase ="http://gym.somee.com/www.Gym.somee.com";
         
         [HttpGet]
-        public ActionResult Index()
-        {
-            return View("Cadastrar Membro");
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> RegistrarAsync(MembersViewModel u)
-        {
-            try 
-            { // codigos aqui
-
-                [HttpGet]
-                public async Task<ActionResult> DeleteAsync(int? id)
-                {
-                    try
-                    {
-                        HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenMembers");
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-                        HttpResponseMessage response = await httpClient.DeleteAsync(uriBase + id.ToString);                        
-                        string serialized = await response.Content.ReadAsStringAsync();
-                        
-                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                        {
-                            TempData["Mensagem"] = string.Format("Membro Id {0} removuido com sucesso!", id);
-                            return RedirectToAction("Index");
-                        }
-                        else 
-                            throw new System.Exception(serialized);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        TempData["MensagemErro"] = ex.Message;
-                        return RedirectToAction("Index");
-                    }
-                }
-
-
-                [HttpGet]
-                public async Task<ActionResult> EditAsync(int? id)
-                {
-                    try
-                    {
-                        HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenMember");
-                                
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        var content = new StringContent(JsonConvert.SerializeObject(p));
-                        content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
-                        HttpResponseMessage response = await httpClient.PutAsync(uriBase + id.ToString);                        
-                        string serialized = await response.Content.ReadAsStringAsync();
-
-                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                        {
-                            TempData["Mensagem"]=
-                                string.Format("Membro {0}, classe {1} atualizado com sucesso!", p.Nome, p.Classe);
-                        }
-                        else 
-                            throw new System.Exception(serialized);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        TempData["MensagemErro"] = ex.Message;
-                        return RedirectToAction("Index");
-                    }
-                }
-
-
-                [HttpGet]
-                public async Task<ActionResult> EditAsync(int? id)
-                {
-                    try
-                    {
-                        HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenMember");
-                        
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString);
-                        
-                        string serialized = await response.Content.ReadAsStringAsync();
-
-                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                        {
-                            MembersViewModel p = await Task.Run(() =>
-                            JsonConvert.DeserializeObject<MembersViewModel>(serialized));
-                            return View(p);
-                        }
-                        else 
-                            throw new System.Exception(serialized);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        TempData["MensagemErro"] = ex.Message;
-                        return RedirectToAction("Index");
-                    }
-                }
-
-                [HttpPost] 
-                public ActionResult Create()
-                {
-                    return View();
-                }
-
-
-                [HttpGet]
-                public async Task<ActionResult> DetailsAsync(int? id)
-                {
-                    try
-                    {
-                        HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenMember");
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                        HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString);
-                        string serialized = await response.Content.ReadAsStringAsync();
-
-                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                        {
-                            MembersViewModel p = await Task.Run(() =>
-                            JsonConvert.DeserializeObject<MembersViewModel>(serialized));
-                            return View(p);
-                        }
-                        else 
-                            throw new System.Exception(serialized);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        TempData["MensagemErro"] = ex.Message;
-                        return RedirectToAction("Index");
-                    }
-                }
-
-                [HttpPost] 
-                public ActionResult Create()
-                {
-                    return View();
-                }
-
-
-                [HttpGet]
-                public async Task<ActionResult> CreateAsync(MembersViewModel p)
-                {
-                    try
-                    {
-                        HttpClient httpClient = new HttpClient();
-                        string token = HttpContext.Session.GetString("SessionTokenMembers");
-                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-                        var content = new StringContent(JsonConvert.SerializeObject(p));
-                        content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                        HttpResponseMessage response = await httpClient.PostAsync(uriBase, content);
-                        string serialized = await response.Content.ReadAsStringAsync();
-
-                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
-                        {
-                            TempData["Mensagem"] = string.Format("Mmebro {0}, Id {1} salvo com sucesso!", p.Nome, serialized);
-                            return RedirectToAction("Index");
-                        }
-                        else
-                            throw new System.Exception(serialized);
-                    }
-                    catch (System.Exception ex) 
-                    {
-                        TempData["MensagemErro"] = ex.Message;
-                        return RedirectToAction("Create");
-                    }
-                }
-
-                [HttpGet]
                 public async Task<ActionResult> IndexAsync()
                 {
                     try
@@ -215,7 +45,163 @@ namespace GYMMVC.Controllers
                         return RedirectToAction("Index");
                     }
                 }
+
+                [HttpPost]
+                public async Task<ActionResult> CreateAsync(MembersViewModel p)
+                {
+                    try
+                    {
+                        HttpClient httpClient = new HttpClient();
+                        string token = HttpContext.Session.GetString("SessionTokenMembers");
+                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                        var content = new StringContent(JsonConvert.SerializeObject(p));
+                        content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                        HttpResponseMessage response = await httpClient.PostAsync(uriBase, content);
+                        string serialized = await response.Content.ReadAsStringAsync();
+
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            TempData["Mensagem"] = string.Format("Mmebro {0}, Id {1} salvo com sucesso!", p.Nome, serialized);
+                            return RedirectToAction("Index");
+                        }
+                        else
+                            throw new System.Exception(serialized);
+                    }
+                    catch (System.Exception ex) 
+                    {
+                        TempData["MensagemErro"] = ex.Message;
+                        return RedirectToAction("Create");
+                    }
+                }
+
+                                [HttpPost] 
+                public ActionResult Create()
+                {
+                    return View();
+                }
+
+                                [HttpGet]
+                public async Task<ActionResult> DetailsAsync(int? id)
+                {
+                    try
+                    {
+                        HttpClient httpClient = new HttpClient();
+                        string token = HttpContext.Session.GetString("SessionTokenMember");
+                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString);
+                        string serialized = await response.Content.ReadAsStringAsync();
+
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            MembersViewModel p = await Task.Run(() =>
+                            JsonConvert.DeserializeObject<MembersViewModel>(serialized));
+                            return View(p);
+                        }
+                        else 
+                            throw new System.Exception(serialized);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        TempData["MensagemErro"] = ex.Message;
+                        return RedirectToAction("Index");
+                    }
+                }
+
+                [HttpGet]
+                public async Task<ActionResult> EditAsync(int? id)
+                {
+                    try
+                    {
+                        HttpClient httpClient = new HttpClient();
+                        string token = HttpContext.Session.GetString("SessionTokenMember");
+                                
+                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                        HttpResponseMessage response = await httpClient.GetAsync(uriBase + id.ToString());                        
+                        string serialized = await response.Content.ReadAsStringAsync();
+
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            MembersViewModel m  = await Task.Run(() =>
+                            JsonConvert.DeserializeObject<MembersViewModel>(serialized));
+                            return View(m);
+                            
+                        }
+                        else 
+                            throw new System.Exception(serialized);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        TempData["MensagemErro"] = ex.Message;
+                        return RedirectToAction("Index");
+                    }
+                }
+
                 
+                [HttpPost]
+                public async Task<ActionResult> EditAsync(MembersViewModel m)
+                {
+                    try
+                    {
+                        HttpClient httpclient = new HttpClient();
+                        string token = HttpContext.Session.GetString("SessionTokenMember");
+                        
+                        httpclient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        var content1 = new StringContent(JsonConvert.SerializeObject(m));
+                        content1.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                        
+                        
+                        HttpResponseMessage response1 = await httpclient.PutAsync(uriBase, content1); 
+                        string serialized1 = await response1.Content.ReadAsStringAsync();
+
+                        if (response1.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                                TempData["Mensagem"] = 
+                                string.Format("Membro {0}, Email{1}, foi atualizado",m.Nome, m.Email);
+                        
+                                return RedirectToAction("Index");
+                        }
+
+                        else 
+                            throw new System.Exception(serialized1);
+
+                    }
+
+                    catch (System.Exception ex)
+                    {
+                        TempData["MensagemErro"] = ex.Message;
+                        return RedirectToAction("Index");
+                    }   
+
+                }
+
+                public async Task<ActionResult> DeleteAsync(int? id)
+                {
+                    try
+                    {
+                        HttpClient httpClient = new HttpClient();
+                        string token = HttpContext.Session.GetString("SessionTokenMembers");
+                        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                        HttpResponseMessage response = await httpClient.DeleteAsync(uriBase + id.ToString);                        
+                        string serialized = await response.Content.ReadAsStringAsync();
+                        
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            TempData["Mensagem"] = string.Format("Membro Id {0} removuido com sucesso!", id);
+                            return RedirectToAction("Index");
+                        }
+                        else 
+                            throw new System.Exception(serialized);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        TempData["MensagemErro"] = ex.Message;
+                        return RedirectToAction("Index");
+                    }
+                }
+                    
                 [HttpGet]
                 public ActionResult IndexLogin()
                 {
@@ -256,6 +242,8 @@ namespace GYMMVC.Controllers
                 }
 
 
+/*
+
                 HttpClient httpClient = new HttpClient();
                 string uriComplementar = "Registrar";
 
@@ -282,5 +270,6 @@ namespace GYMMVC.Controllers
                 return RedirectToAction("Index");
             }
         }
+        */
     }
 }

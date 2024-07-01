@@ -9,67 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GYMMVC
 build_property.RootNamespace = GYMMVC
-build_property.ProjectDir = C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC\
+build_property.ProjectDir = C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bkynn\OneDrive\Área de Trabalho\GYMMVC
+build_property.MSBuildProjectDirectory = C:\Users\eduar\OneDrive\Documentos\Projetos\GYMMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Home/Index.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Home/Privacy.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/AutenticarMembers.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/AutenticarMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xBdXRlbnRpY2FyTWVtYmVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/CadastrarMembers.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/CadastrarMembers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDYWRhc3RyYXJNZW1iZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/Create.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/Details.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/Edit.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Members/Index.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Members/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Shared/Error.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Shared/_LoginPartialGYM.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Shared/_LoginPartialGYM.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWxHWU0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/_ViewImports.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/_ViewStart.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bkynn/OneDrive/Área de Trabalho/GYMMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/eduar/OneDrive/Documentos/Projetos/GYMMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8uavkre2qf
