@@ -14,7 +14,7 @@ namespace GYMMVC.Controllers
 {
     public class MembersController : Controller
     {
-        public string uriBase ="http://gym.somee.com/www.Gym.somee.com";
+        public string uriBase ="http://gymapi.somee.com/GYMAPI/MembersControllerDB/";
         
         [HttpGet]
                 public async Task<ActionResult> IndexAsync()
